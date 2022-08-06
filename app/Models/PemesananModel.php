@@ -4,6 +4,12 @@ use CodeIgniter\Model;
 
 class PemesananModel extends Model
 {
-    protected $table = "pegawai";
-    protected $primaryKey = 'id_pegawai';
+    protected $table = "pemesanan";
+    protected $primaryKey = 'id_pesanan';
+
+    public function getData(){
+        $pemesanan = new PemesananModel();
+        $dPemesesanan = $pemesanan->findAll();
+        return $dPemesesanan;
+    }
 }

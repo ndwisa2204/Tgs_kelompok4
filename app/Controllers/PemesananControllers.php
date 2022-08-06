@@ -10,7 +10,9 @@ class PemesananControllers extends BaseController
         if(!session()->has('username')){
 			return redirect()->to('/');
 		}
-        $data["data"]="Ini Data";
+        $PemesananModel = new PemesananModel();
+        $dPemasanan=$PemesananModel->getData();
+        $data["data"]=$dPemasanan;
         return view("pemesanan_data",$data);
     }
 }

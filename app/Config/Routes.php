@@ -38,7 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'LoginControllers::index');
 $routes->post('/login/auth', 'LoginControllers::auth');
-$routes->post('/login/logout', 'LoginControllers::logout');
+$routes->get('/login/logout', 'LoginControllers::logout');
 
 
 // Route Pemesanan

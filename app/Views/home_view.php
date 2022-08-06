@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="<?php echo base_url("css/bootstrap.min.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("DataTables-1.12.1/css/jquery.dataTables.min.css"); ?>" rel="stylesheet">
 
     <!--[endif]-->
   </head>
@@ -28,18 +29,18 @@
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url(); ?>/pemesanan">Pemesanan <span class="sr-only"></span></a>
       </li>
-    
+    </ul>
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+        <a class="nav-link" href="<?php echo base_url(); ?>/login/logout">Logout <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
   </div>
 </nav>
-<!-- Nav Bar End -->
-	<!--strat-->
-    dsadsad
-    <!--end-->
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo base_url("js/jquery.min.js"); ?>"></script>
     <script src="<?php echo base_url("js/bootstrap.min.js"); ?>"></script>
+    <script src="<?php echo base_url("DataTables-1.12.1/js/jquery.dataTables.js"); ?>"></script>
   </body>
 </html>

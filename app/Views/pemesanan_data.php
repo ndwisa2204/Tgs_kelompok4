@@ -63,9 +63,10 @@
               echo "<tr>";
               echo "<td>".$vPesanan["id_pesanan"]."</pesanan>";
               echo "<td>".$vPesanan["nama_pemesan"]."</pesanan>";
-              echo "<td>".$vPesanan["id_barang"]."</pesanan>";
+              echo "<td>".$vPesanan["nama_barang"]."</pesanan>";
               echo "<td>".$vPesanan["jumlah_pesanan"]."</pesanan>";
-              echo "<td>".$vPesanan["proses"]."</pesanan>";
+              $status=$vPesanan["proses"]==1?"<p style='color:green'>Finished</p>":"<p style='color:red'>Proccess</p>";
+              echo "<td>".$status."</pesanan>";
               echo "</tr>";
             }
 

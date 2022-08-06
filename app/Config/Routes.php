@@ -37,6 +37,13 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'LoginControllers::index');
+$routes->post('/login/auth', 'LoginControllers::auth');
+$routes->post('/login/logout', 'LoginControllers::logout');
+
+
+// Route Pemesanan
+$routes->get('/pemesanan', 'PemesananControllers::index');
+
 
 /*
  * --------------------------------------------------------------------

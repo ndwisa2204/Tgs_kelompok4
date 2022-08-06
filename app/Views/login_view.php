@@ -17,12 +17,11 @@
         <div class="col-md-6 mx-auto mt-5">
           <?php
           if(session()->getFlashdata('message')){ ?>
-          <div class="alert alert-info">
+          <div class="alert alert-danger ">
               <?= session()->getFlashdata('message') ?>
           </div>
           <?php } ?>
           <form method="post"  action="<?= base_url('login/auth') ?>">
-            <h1 class="h3 mb-3 font-weight-normal">Aplikasi Login Sederhana Codeingiter 4</h1>
             <div class="form-group">
               <label>Username</label>
               <input type="text" class="form-control" name="username" required="" placeholder="Masukkan Username">

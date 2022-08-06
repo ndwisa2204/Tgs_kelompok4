@@ -16,7 +16,7 @@
   <body>
     <!-- Nav BAr -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="#">Kelompok 14</a>
+  <a class="navbar-brand" href="#">Tugas Kelompok ke-4</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
